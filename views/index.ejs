@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Counter</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <% for (var x in data){ %>
+      <% if(data[x].counter >= 1){ %>
+    <p> <%= data[x].counter %> times</p>
+    <%}else{%>
+      <p>0 times</p>
+      <%}%>
+    <%}%>
+    <a href="/two">Add 2</a>
+    <a href="/reset">reset</a>
+  </body>
+</html>
